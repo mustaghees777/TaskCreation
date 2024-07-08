@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    app:cardCornerRadius="25dp"
+    app:cardElevation="5dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardBackgroundColor="@color/black"
+    android:background="@drawable/itembg"
+    android:padding="13dp">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        android:background="@drawable/itembg"
+        android:padding="13dp">
+    <TextView
+        android:id="@+id/text_view_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task Name"
+        android:textStyle="bold"
+        android:layout_margin="4dp"
+        android:textColor="#DBD1D1"
+        android:textSize="27sp" />
+
+    <TextView
+        android:id="@+id/text_view_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task Details"
+        android:textColor="#E9E9E9"
+android:textSize="25dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp" />
+
+    <TextView
+        android:id="@+id/text_view_valid_thru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valid Thru"
+        android:textColor="#E4E4E4"
+        android:textSize="22sp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="4dp" />
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/addbg"
+    android:layout_height="match_parent">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:text="Enter Details"
+    android:textSize="20dp"
+    android:textStyle="bold"
+    android:textColor="@color/white"
+    android:layout_marginBottom="20dp"
+  android:gravity="center"
+    android:layout_margin="16dp"/>
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task Reminder   "
+        android:textColor="@color/white"
+        android:layout_margin="12dp"
+        android:id="@+id/switchReminder"/>
+
+    <!-- Card Name Field -->
+    <TextView
+        android:id="@+id/textViewCardName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Task Name"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/EdittextCardName"
+        android:layout_width="327dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/textViewCardName"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/editng"
+        android:hint="TaskName"
+        android:padding="8dp"
+        android:textColor="@color/white" />
+
+    <!-- Card Number Field -->
+    <TextView
+        android:id="@+id/textViewCardNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Task Detail"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_below="@id/EdittextCardName"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/EdittextCardNumber"
+        android:layout_width="327dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/textViewCardNumber"
+        android:hint="Task Detail"
+        android:background="@drawable/editng"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="8dp"/>
+
+
+
+    <!-- Valid Thru Date Field -->
+    <TextView
+        android:id="@+id/textViewValidThruDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Due Date"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_below="@id/EdittextCardNumber"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/EdittextValidThruDate"
+        android:layout_width="327dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/textViewValidThruDate"
+        android:hint="DueDate"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:inputType="date"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/editng"
+        android:layout_marginRight="10dp"
+        android:padding="8dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submitButton"
+        android:layout_width="145dp"
+        android:layout_height="55dp"
+       android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/addtaskbtn"
+  />
+    <LinearLayout
+        android:id="@+id/banner_main_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="1dp"
+        android:orientation="vertical" />
+
+
+
+</LinearLayout>
+</ScrollView>
